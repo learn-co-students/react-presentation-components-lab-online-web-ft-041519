@@ -9,13 +9,13 @@ export default class SimpleComponent extends Component {
 
   render() {
     return (
-      <div handleClick={this.props.onClick}>
+      <div onClick={this.handleClick}>
         {this.state.mood}
       </div>
     )
   }
 
-  onClick = (event) => {
+  handleClick = () => {
     this.setState({
       mood: "sad"
     })

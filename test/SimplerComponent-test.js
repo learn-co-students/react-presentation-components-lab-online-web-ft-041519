@@ -27,13 +27,13 @@ describe('<SimplerComponent />', () => {
     );
   });
 
-  // it('should render a div with text "I am just happy"', () => {
-  //   expect(wrapper.find('div').text()).to.match(/I am just happy/);
-  // });
+  it('should render a div with text "I am just happy"', () => {
+    expect(wrapper.find('div').text()).to.match(/I am just happy/);
+  });
 
-  // it('should be capable of handling onClick', () => {
-  //   wrapper.find('div').simulate('click');
-  //   expect(spy.called).to.be.true;
-  // });
+  it('should be capable of handling onClick', () => {
+    wrapper.find('div').simulate('click');
+    expect(spy.called).to.be.true;
+  });
 
 });
